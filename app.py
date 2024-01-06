@@ -1,4 +1,3 @@
-import os
 from flask import Flask
 from views import views
 from config import secret_key
