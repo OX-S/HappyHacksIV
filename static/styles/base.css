@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #2980b9; /* Adjust the color as needed */
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.web_logo {
+    display: flex;
+    align-items: center;
+}
+
+.web_logo img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.user-controls a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.user-controls a:hover {
+    text-decoration: underline;
+}

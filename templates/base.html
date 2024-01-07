@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}School Supply Exchange{% endblock %}</title>
+    <link rel="stylesheet" href="../static/styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="web_logo">
+            <a href="{{ url_for('views.home') }}">
+                <img src="../static/images/AdobeStock_276647199.png" alt="School Logo">
+            </a>
+            <h1>School Supply Exchange</h1>
+        </div>
+        <div class="user-controls">
+            <a href="{{ url_for('views.login_page') }}">Logout</a>
+        </div>
+    </header>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
