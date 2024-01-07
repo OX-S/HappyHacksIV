@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ffcc66, #ff9900); /* Gradient with school-themed colors */
+    color: #333;
+}
+
+.exchange-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.register-box {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 20px 50px;
+    border-radius: 15px; /* Increased border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added drop shadow */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.login-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
