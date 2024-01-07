@@ -26,6 +26,12 @@
                     <input type="text" id="pencils" name="pencils" value="0" readonly>
                     <button type="button" class="quantity-btn" onclick="updateQuantity('pencils', -1)">-</button>
                 </div>
+                <div class="supply-item">
+                    <label for="pens">Pens</label>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('pens', 1)">+</button>
+                    <input type="text" id="pens" name="pens" value="0" readonly>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('pens', -1)">-</button>
+                </div>
 
                 <div class="supply-item">
                     <label for="notebooks">Notebooks</label>
@@ -39,6 +45,18 @@
                     <input type="text" id="binders" name="binders" value="0" readonly>
                     <button type="button" class="quantity-btn" onclick="updateQuantity('binders', -1)">-</button>
                 </div>
+                <div class="supply-item">
+                    <label for="folders">Folders</label>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('folders', 1)">+</button>
+                    <input type="text" id="folders" name="folders" value="0" readonly>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('folders', -1)">-</button>
+                </div>
+                <div class="supply-item">
+                    <label for="markers">Markers</label>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('markers', 1)">+</button>
+                    <input type="text" id="markers" name="markers" value="0" readonly>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('markers', -1)">-</button>
+                </div>
 
 
 
@@ -50,6 +68,7 @@
             <h2>2) Choose Nearest Drop-off Point</h2>
 
             <div id="map" style="height: 400px;"></div>
+            <button class="location-select">Select Location</button>
         </div>
     </div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>

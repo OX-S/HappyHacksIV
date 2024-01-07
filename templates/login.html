@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Supply Exchange</title>
+    <title>BridgeTheGap</title>
     <link rel="stylesheet" href="../static/styles/login.css">
 </head>
 <body>
     <div class="exchange-container">
         <div class="logo">
-            <h1>School Supply Exchange</h1>
+            <h1>BridgeTheGap</h1>
+            <h2>Helping historically underfunded schools
+                due to economic and racial inequity</h2>
             <img src="../static/images/AdobeStock_276647199.png" alt="School Supplies">
         </div>
         <div class="login-box">
-            {% with messages = get_flashed_messages(with_categories=true) %}
-                {% if messages %}
-                    {% for category, message in messages %}
-                        <div class="alert alert-{{ category }}">{{ message }}</div>
-                    {% endfor %}
-                {% endif %}
-            {% endwith %}
             <h2>Login</h2>
             <form method="post">
                 <label for="username">Username:</label>
@@ -31,6 +26,13 @@
 
                 <button type="submit">Login</button>
             </form>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
         </div>
     </div>
 </body>

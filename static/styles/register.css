@@ -9,6 +9,10 @@ body {
     color: #333;
 }
 
+h2 {
+    font-size: 18px;
+}
+
 .exchange-container {
     display: flex;
     width: 80%;

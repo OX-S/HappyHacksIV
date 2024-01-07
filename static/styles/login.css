@@ -8,6 +8,9 @@ body {
     background: linear-gradient(to right, #ffcc66, #ff9900);
     color: #333;
 }
+h2 {
+    font-size: 18px;
+}
 
 .exchange-container {
     display: flex;

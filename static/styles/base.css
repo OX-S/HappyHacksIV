@@ -29,12 +29,14 @@ header {
     font-size: 1.5em;
     text-align: center;
 }
-
 .user-controls a {
-    color: #3498db;
-    text-decoration: none;
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underlines */
+    padding: 10px 15px; /* Add padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth color transition on hover */
 }
 
 .user-controls a:hover {
-    text-decoration: underline;
+    background-color: #2980b9; /* Darker blue on hover */
 }
