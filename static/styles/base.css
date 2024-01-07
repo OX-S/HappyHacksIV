@@ -4,9 +4,9 @@ body {
 }
 
 header {
-    background-color: #2980b9; /* Adjust the color as needed */
+    background-color: #2980b9;
     color: #fff;
-    padding: 15px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +15,7 @@ header {
 .web_logo {
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 .web_logo img {
@@ -26,6 +27,7 @@ header {
 .logo h1 {
     margin: 0;
     font-size: 1.5em;
+    text-align: center;
 }
 
 .user-controls a {
