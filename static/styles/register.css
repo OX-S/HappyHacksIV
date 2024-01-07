@@ -22,9 +22,19 @@ body {
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 300px;
     height: auto;
     margin-bottom: 10px;
+    animation: floatUpDown 1s infinite;
+}
+
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .register-box {
@@ -33,6 +43,8 @@ body {
     padding: 20px 20px 50px;
     border-radius: 15px; /* Increased border-radius for rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added drop shadow */
+    max-width: 400px;
+
 }
 
 form {
