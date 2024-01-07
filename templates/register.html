@@ -14,8 +14,15 @@
 
         </div>
         <div class="register-box">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
             <h2>Create an Account</h2>
-            <form>
+            <form method="post">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
 
