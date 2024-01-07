@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffcc66, #ff9900);
+    color: #333;
+}
+
+.exchange-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.donation-option {
+    width: 45%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.icon {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.donate-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.donate-button:hover {
+    background-color: #2980b9;
+}
+
+.footer-banner {
+    position: fixed;
+    bottom: -150px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-banner img {
+    max-width: 100%;
+}

@@ -5,7 +5,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(to right, #ffcc66, #ff9900); /* Gradient with school-themed colors */
+    background: linear-gradient(to right, #ffcc66, #ff9900);
     color: #333;
 }
 
@@ -41,8 +41,8 @@ body {
     flex: 1;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px 20px 50px;
-    border-radius: 15px; /* Increased border-radius for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added drop shadow */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 400px;
 
 }
