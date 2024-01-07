@@ -1,10 +1,9 @@
-
+<!DOCTYPE html>
 {% extends 'base.html' %}
 
 {% block title %}Home - School Supply Exchange{% endblock %}
 
 {% block content %}
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,16 +19,15 @@
 
             <h2>Donate School Supplies</h2>
             <p>Help students by providing essential school supplies.</p>
-            <button class="donate-button" onclick="location.href='school_supplies_donation.html'">Donate Now</button>
+            <button class="donate-button" onclick="location.href='{{ url_for('views.donate_supplies') }}'">Donate Now</button>
         </div>
         <div class="donation-option">
             <img class="icon" src="../static/images/money-svgrepo-com.svg" alt="Money Icon">
             <h2>Donate Money</h2>
             <p>Contribute financially to support education initiatives.</p>
-            <button class="donate-button" onclick="location.href='money_donation.html'">Donate Now</button>
+            <button class="donate-button" href="{{ url_for('views.donate_supplies') }}">Donate Now</button>
         </div>
     </div>
-
     <div class="footer-banner">
         <img src="../static/images/AdobeStock_529767356.png" alt="Cloud Banner">
     </div>

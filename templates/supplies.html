@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}Home - School Supply Exchange{% endblock %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Supply Donation</title>
+    <link rel="stylesheet" href="../static/styles/supplies.css">
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="content-left">
+            <h2>1) Select Supplies to Donate</h2>
+
+            <form id="supplyForm">
+                <div class="supply-item">
+                    <label for="pencils">Pencils</label>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('pencils', 1)">+</button>
+                    <input type="text" id="pencils" name="pencils" value="0" readonly>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('pencils', -1)">-</button>
+                </div>
+
+                <div class="supply-item">
+                    <label for="notebooks">Notebooks</label>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('notebooks', 1)">+</button>
+                    <input type="text" id="notebooks" name="notebooks" value="0" readonly>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('notebooks', -1)">-</button>
+                </div>
+                 <div class="supply-item">
+                    <label for="binders">Binders</label>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('binders', 1)">+</button>
+                    <input type="text" id="binders" name="binders" value="0" readonly>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity('binders', -1)">-</button>
+                </div>
+
+
+
+                <input type="submit" value="Donate">
+            </form>
+        </div>
+        <div class="content-right">
+
+            <h2>2) Choose Nearest Drop-off Point</h2>
+
+            <div id="map" style="height: 400px;"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../static/js/supplies.js"></script>
+</body>
+</html>
+{% endblock %}
+

@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffcc66, #ff9900);
+    color: #333;
+}
+
+.container {
+    display: flex; /* Use flexbox to create a flexible container */
+    justify-content: space-between; /* Space the content evenly */
+    padding: 20px;
+}
+
+.content-left,
+.content-right {
+    width: 42%; /* Set the width of each content div */
+    border: 1px solid #ccc; /* Optional: Add borders for visual separation */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align:center
+}
+.content-left {
+    margin-left: 5%;
+}
+.content-right {
+    margin-right: 5%;
+}
+
+/*CSS For the Left side fo the supply form*/
+#supplyForm {
+    max-width: 400px;
+    margin: auto;
+}
+
+.supply-item {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin: auto auto 5px;
+
+}
+
+.quantity-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.quantity-btn:hover {
+    background-color: #2980b9;
+}
+
+input[type="text"] {
+    width: 30px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218c53;
+}
+
+/*CSS For the MAP*/
+#map {
+    height: 400px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

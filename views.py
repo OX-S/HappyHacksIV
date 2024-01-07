@@ -8,6 +8,7 @@ def landing():
     # return "hello"
     return redirect(url_for('views.login_page'))
 
+
 @views.route("/home")
 def home():
     return render_template("home.html")
@@ -31,6 +32,11 @@ def login_page():
 @views.route("/register", methods=['GET', 'POST'])
 def register_page():
     return render_template('register.html')
+
+
+@views.route("/supplies")
+def donate_supplies():
+    return render_template('supplies.html')
 
 
 @views.route("/emmaisadoofus")
