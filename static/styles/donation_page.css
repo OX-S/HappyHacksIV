@@ -15,19 +15,35 @@ body {
 }
 
 .container {
+    width: 90%;
+    margin: 5px auto;
+
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-.container-right,
 .container-left {
-    max-width: 800px;
-    margin: 20px auto;
+    width: 43%;
     padding: 20px;
+
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
+}
+.container-right {
+    width: 43%;
+
+}
+
+.map-div,
+.sub-div {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+
 }
 
 
