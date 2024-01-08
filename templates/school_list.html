@@ -14,23 +14,27 @@
 
 </head>
 <body>
-    <h1>List of Schools</h1>
+    <h1 class="title">List of Schools</h1>
     <ul>
         {% for school in schools %}
-            <div class="container">
-                <img class="school-img" src="{{ url_for('static', filename=school.school_img) }}" alt="{{ school.name }} Image">
-                <div>
-                    <h1>{{ school.name }} Donation Page</h1>
-                    <p>{{ school.description | truncate(100, '...') }}</p>
+            <a href="{{ url_for('views.school_donation_page', school_id=school.id) }}">
 
-                    <div class="progress-bar">
-                    <div class="progress" style="width: {{ (school.current_funds / school.donation_goal) * 100 }}%;"></div>
+                <div class="container">
+                    <img class="school-img" src="{{ url_for('static', filename=school.school_img) }}" alt="{{ school.name }} Image">
+                    <div>
+                        <h1>{{ school.name }} Donation Page</h1>
+                        <p>{{ school.description | truncate(100, '...') }}</p>
+
+                        <div class="progress-bar">
+                        <div class="progress" style="width: {{ (school.current_funds / school.donation_goal) * 100 }}%;"></div>
+                        </div>
+                        <p>Donation Goal: ${{ school.donation_goal }}</p>
+                        <p>Current Funds: ${{ school.current_funds }}</p>
                     </div>
-                    <p>Donation Goal: ${{ school.donation_goal }}</p>
-                    <p>Current Funds: ${{ school.current_funds }}</p>
-                </div>
 
-            </div>
+                </div>
+            </a>
+
         {% endfor %}
     </ul>
 </body>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}Home - School Supply Exchange{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ school.name }} Donation Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="../static/styles/donation_page.css">
+
+
+</head>
+<body>
+    <div class="top-container">
+        <h1>{{ school.name }} Donation Page</h1>
+        <div class="progress-bar">
+            <div class="progress" style="width: {{ (school.current_funds / school.donation_goal) * 100 }}%;"></div>
+        </div>
+
+        <p>Donation Goal: ${{ school.donation_goal }}</p>
+        <p>Current Funds: ${{ school.current_funds }}</p>
+
+    </div>
+    <div class="container">
+
+        <div class="container-left">
+            <img class="school-img" src="{{ url_for('static', filename=school.school_img) }}" alt="{{ school.name }} Image">
+            <p>{{ school.description }}</p>
+
+        </div>
+        <div class="container-right">
+            <label for="donation-amount">Enter Amount to Donate:</label>
+            <input type="number" id="donation-amount" name="donation-amount" placeholder="Enter amount" required>
+            <button onclick="submitDonation()">Donate Amount</button>
+
+            <div>
+                <div id="map" style="height: 400px;"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../static/js/supplies.js"></script>
+    <script>
+        const map = L.map('map').setView([40.8833, -74.0111], 12); //Bergen County, NJ
+
+           L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+    </script>
+
+</body>
+</html>
+
+{% endblock %}
