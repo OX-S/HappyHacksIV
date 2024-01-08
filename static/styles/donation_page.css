@@ -48,6 +48,33 @@ body {
 
 }
 
+.sub-div {
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+}
+
 
 .school-img {
     width: 100px;
@@ -62,6 +89,7 @@ body {
 
 p {
     margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .progress-bar {

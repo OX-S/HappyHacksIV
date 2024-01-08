@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    <h1 class="title">List of Schools</h1>
+    <h1 class="title">Schools in Need</h1>
     <ul>
         {% for school in schools %}
             <a href="{{ url_for('views.school_donation_page', school_id=school.id) }}">
