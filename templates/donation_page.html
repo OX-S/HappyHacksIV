@@ -50,13 +50,21 @@
 
     </div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="../static/js/supplies.js"></script>
+    <script src="../static/js/donation_page.js"></script>
     <script>
-        const map = L.map('map').setView([40.8833, -74.0111], 12); //Bergen County, NJ
+        const map = L.map('map').setView([{{ school.latitude }}, {{ school.longitude }}], 15);
 
-           L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-                attribution: '© OpenStreetMap contributors'
-            }).addTo(map);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([{{ school.latitude }}, {{ school.longitude }}]).addTo(map)
+            .bindPopup('{{ school.name }}')
+            .openPopup();
 
     </script>
 
