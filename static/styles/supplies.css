@@ -3,6 +3,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #ffcc66, #ff9900);
     color: #333;
+    padding-top: 100px;
+
 }
 
 .container {
